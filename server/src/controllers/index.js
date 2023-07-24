@@ -12,5 +12,5 @@ module.exports.camas = (application, req, res) => {
     res.render('secundaryPage', { pageTitle: 'Camas' })
 }
 module.exports.contato = (application, req, res) => {
-    res.render('contato')
+    res.render('contato',{ pageTitle: 'Contato'})
 }

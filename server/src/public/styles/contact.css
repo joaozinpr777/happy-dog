@@ -1,0 +1,91 @@
+.page-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.page-tittle{
+    width: max-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.name-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.email-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.form-textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input{
+    width: 93%;
+    height: 35px;
+    outline: none;
+    font-size: 17px;
+    padding: 10px;
+}
+
+label{
+    font-size: 20px;
+    padding: 10px;
+}
+
+textarea{
+    resize: none;
+    width: 97%;
+    height: 200px;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--maincolor);
+    margin-top: 15px;
+}
+
+button:hover {
+    border: 0px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    color: var(--maincolor);
+    background-color: black;
+}

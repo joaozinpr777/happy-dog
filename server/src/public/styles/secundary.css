@@ -1,0 +1,10 @@
+.page-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-tittle{
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
