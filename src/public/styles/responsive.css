@@ -1,0 +1,32 @@
+@media(max-width: 1000px) {
+    .main {
+        width: 100%;
+    }
+
+    .painel {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .content {
+        margin-top: 0px;
+    }
+
+    .accessories ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accessories li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #first-hr {
+        display: none;
+    }
+}

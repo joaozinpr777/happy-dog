@@ -1,17 +1,18 @@
-.page-content{
+.page-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.page-tittle{
+.page-title {
     width: max-content;
     margin-bottom: 30px;
     margin-top: 30px;
+    text-align: center;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -20,20 +21,20 @@
     margin-top: 15px;
 }
 
-.form-inputs{
+.form-inputs {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.name-input{
+.name-input {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.email-input{
+.email-input {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -42,14 +43,14 @@
 
 
 
-.form-textarea{
+.form-textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-input{
+input {
     width: 93%;
     height: 35px;
     outline: none;
@@ -57,12 +58,12 @@ input{
     padding: 10px;
 }
 
-label{
+label {
     font-size: 20px;
     padding: 10px;
 }
 
-textarea{
+textarea {
     resize: none;
     width: 97%;
     height: 200px;
@@ -88,4 +89,33 @@ button:hover {
     transition-delay: 0s;
     color: var(--maincolor);
     background-color: black;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+    display: none;
+
+}
+
+.close button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -110px;
+}
+
+.message {
+    text-align: center;
+    font-size: 30px;
 }

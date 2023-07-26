@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="/styles/css.css">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/root.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
     <link rel="icon" type="image/png" href="/images/logo.png" />
 </head>
 
 <body>
+    <div class="modal" id="modal">
+        <div class="close">
+            <button onclick="modalOff()">X</button>
+        </div>
+        <div class="message">
+            <p>Obrigado pelo contato!.</p>
+        </div>
+    </div>
     <div class="main">
         <div class="header">
             <h1>Happy Dog</h1>
@@ -37,7 +46,7 @@
             </ul>
         </div>
         <div class="page-content">
-            <div class="page-tittle">
+            <div class="page-title">
                 <h1>Fale Conosco</h1>
             </div>
             <div class="form">
@@ -53,7 +62,7 @@
                     <label for="message">Mensagem</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
-                <button>ENVIAR</button>
+                <button onclick="modal()">ENVIAR</button>
             </div>
         </div>
         <div class="footer">
@@ -81,6 +90,8 @@
             </div>
         </div>
     </div>
+
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
