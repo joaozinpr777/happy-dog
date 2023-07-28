@@ -11,7 +11,8 @@
     <link rel="icon" type="image/png" href="/images/logo.png" />
 </head>
 
-<body>
+<body onload="getFromApi('?category=camas')">
+    <button style="display: none;" value="<%=api_url%>" id="btn_api"></button>
     <div class="main">
         <div class="header">
             <h1>Happy Dog</h1>
