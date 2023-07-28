@@ -119,3 +119,24 @@ button:hover {
     text-align: center;
     font-size: 30px;
 }
+
+@media(max-width: 1000px) {
+
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .email-input {
+        margin-top: 20px;
+    }
+
+    .form-textarea {
+        margin-top: 20px;
+    }
+
+    input {
+        height: 40px;
+        font-size: 30px;
+        padding: 0;
+    }
+}

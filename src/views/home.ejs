@@ -11,8 +11,7 @@
     <link rel="icon" type="image/png" href="/images/logo.png" />
 </head>
 
-<body onload="getFromApi('?category=camas')">
-    <button style="display: none;" value="<%=api_url%>" id="btn_api"></button>
+<body>
     <div class="main">
         <div class="header">
             <h1>Happy Dog</h1>
@@ -42,46 +41,26 @@
         <div class="content">
             <hr size="1" color="black" width="100%" id="first-hr" />
             <div class="accessories">
+
                 <h2>ACESSÓRIOS</h2>
                 <ul>
-                    <li>
-                        <a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/acessorio1.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Filtro de água para gato.</p>
-                                    <p class="product-price">R$ 179,99</p>
+                    <%for (var result of acessorios){%>
+                        <li>
+                            <a href="/product/<%=result._id%>">
+                                <div class="product">
+                                    <div class="product-img"><img src="<%=result.image_url%>"></div>
+                                    <div class="product-details">
+                                        <p class="product-name">
+                                            <%=result.name%>
+                                        </p>
+                                        <p class="product-price">
+                                            R$<%=result.price['$numberDecimal']%>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/acessorio2.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Bolsa de transporte para gato.</p>
-                                    <p class="product-price">R$ 249,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/acessorio3.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Coleira peitoral para cachorro.</p>
-                                    <p class="product-price">R$ 224,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/acessorio4.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Garrafa de água portátil 250ml.</p>
-                                    <p class="product-price">R$ 79,99</p>
-                                </div>
-                            </div>
-                        </a></li>
+                            </a>
+                        </li>
+                        <%}%>
                 </ul>
                 <a href="/acessorios" target="_blank"><button>VER TODOS</button></a>
             </div>
@@ -89,45 +68,23 @@
             <div class="accessories">
                 <h2>BRINQUEDOS</h2>
                 <ul>
-
-                    <li>
-                        <a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/brinquedo1.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Flamingo de brinquedo.</p>
-                                    <p class="product-price">R$ 69,99</p>
+                    <%for (var result of brinquedos){%>
+                        <li>
+                            <a href="/product/<%=result._id%>">
+                                <div class="product">
+                                    <div class="product-img"><img src="<%=result.image_url%>"></div>
+                                    <div class="product-details">
+                                        <p class="product-name">
+                                            <%=result.name%>
+                                        </p>
+                                        <p class="product-price">
+                                            R$<%=result.price['$numberDecimal']%>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/brinquedo2.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Bolinhas de brinquedo.</p>
-                                    <p class="product-price">R$ 149,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/brinquedo3.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Brinquedo ultra durável para mastigar.</p>
-                                    <p class="product-price">R$ 219,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/brinquedo4.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Brinquedos realísticos de cães.</p>
-                                    <p class="product-price">R$ 199,99</p>
-                                </div>
-                            </div>
-                        </a></li>
+                            </a>
+                        </li>
+                        <%}%>
                 </ul>
                 <a href="/brinquedos" target="_blank"><button>VER TODOS</button></a>
             </div>
@@ -135,44 +92,23 @@
             <div class="accessories">
                 <h2>CAMAS</h2>
                 <ul>
-                    <li>
-                        <a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/cama1.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Cama de ursinho redonda para pets.</p>
-                                    <p class="product-price">R$ 279,99</p>
+                    <%for (var result of camas){%>
+                        <li>
+                            <a href="/product/<%=result._id%>">
+                                <div class="product">
+                                    <div class="product-img"><img src="<%=result.image_url%>"></div>
+                                    <div class="product-details">
+                                        <p class="product-name">
+                                            <%=result.name%>
+                                        </p>
+                                        <p class="product-price">
+                                            R$<%=result.price['$numberDecimal']%>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/cama2.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Cama larga para pets.</p>
-                                    <p class="product-price">R$ 289,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/cama3.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Caverna pequena para pets.</p>
-                                    <p class="product-price">R$ 239,99</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="product">
-                                <div class="product-img"><img src="/images/cama4.webp"></div>
-                                <div class="product-details">
-                                    <p class="product-name">Sofá para pets.</p>
-                                    <p class="product-price">R$ 299,99</p>
-                                </div>
-                            </div>
-                        </a></li>
+                            </a>
+                        </li>
+                        <%}%>
                 </ul>
                 <a href="/camas" target="_blank"><button>VER TODOS</button></a>
             </div>

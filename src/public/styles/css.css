@@ -102,6 +102,7 @@
     cursor: pointer;
     outline: none;
     background-color: var(--maincolor);
+    margin-top: 20px;
 }
 
 .accessories button:hover {
@@ -186,7 +187,8 @@
 }
 
 .product-details .product-price {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 a {
