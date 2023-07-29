@@ -31,7 +31,7 @@ async function getFromApiById(id) {
         cache: 'default'
     };
 
-    const url = `${process.env.API_URL}/${id}`
+    const url = `${process.env.API_URL}${id}`
 
     const data = await fetch(url, myInit)
         .then(function (response) {

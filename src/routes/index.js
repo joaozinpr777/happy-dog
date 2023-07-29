@@ -14,4 +14,7 @@ module.exports = (application) => {
     application.get('/contato', (req, res) => {
         require('../controllers/index').contato(application, req, res);
     });
+    application.get('/product/:id', (req, res) => {
+        require('../controllers/index').productPage(application, req, res);
+    });
 }

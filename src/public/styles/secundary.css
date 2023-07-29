@@ -1,10 +1,27 @@
-.page-content{
+.page-content {
     display: flex;
     flex-direction: column;
 }
 
-.page-tittle{
-    width: 80%;
+.page-tittle {
+    width: 100%;
     margin-bottom: 30px;
     margin-top: 30px;
+    text-align: center;
+}
+
+.all-products {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.all-products ul li {
+    float: left;
+    list-style: none;
+    width: 300px;
+    text-align: center;
+}
+
+.all-products ul li:nth-child(4) {
+    clear: both;
 }
