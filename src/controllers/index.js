@@ -28,5 +28,8 @@ module.exports.contato = (application, req, res) => {
 
 module.exports.productPage = async (application, req, res) => {
     const result = await getFromApiById(req.params.id)
-    res.render('productPage', { result: result.data })
+
+    const description = (result.data.description).split(';')
+
+    res.render('productPage', { result: result.data, descriptions: description })
 }

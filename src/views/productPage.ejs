@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/root.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/styles/productPage.css">
     <link rel="icon" type="image/png" href="/images/logo.png" />
 </head>
 
@@ -46,19 +47,27 @@
             </ul>
         </div>
         <div class="page-content">
-            <a href="/product/<%=result._id%>">
-                <div class="product">
-                    <div class="product-img"><img src="<%=result.image_url%>"></div>
-                    <div class="product-details">
-                        <p class="product-name">
+            <div class="product-page">
+                <div>
+                    <div class="product-page-image">
+                        <img src="<%=result.image_url%>" alt="">
+                    </div>
+                    <div class="product-page-main-details">
+                        <p>
                             <%=result.name%>
                         </p>
-                        <p class="product-price">
+                        <p>
                             R$<%=result.price['$numberDecimal']%>
                         </p>
+                        <button>COMPRAR</button>
                     </div>
                 </div>
-            </a>
+                <%for (var description of descriptions){%>
+                    <p>
+                        - <%=description%>
+                    </p>
+                    <%}%>
+            </div>
         </div>
         <div class="footer">
             <div class="footer-logo">

@@ -162,6 +162,11 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    transform: scale(0.9);
+}
+
+.product:hover {
+    transform: scale(1);
 }
 
 .product .product-img {
