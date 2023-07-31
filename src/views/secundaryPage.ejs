@@ -43,6 +43,11 @@
                     <%=pageTitle%>
                 </h1>
             </div>
+            <div class="products-filter">
+                <input placeholder="Fazer busca" type="text" id="search" name="search">
+                <button id="search-btn" onclick="searchOn()">Buscar</button>
+                <button id="clean-btn" onclick="searchOff()">Limpar</button>
+            </div>
             <div class="all-products">
                 <ul>
                     <%for (var result of products){%>
@@ -90,6 +95,7 @@
             </div>
         </div>
     </div>
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>

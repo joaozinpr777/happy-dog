@@ -25,3 +25,39 @@
 .all-products ul li:nth-child(4) {
     clear: both;
 }
+
+.products-filter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-filter input {
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+    outline: none;
+    padding: 0;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--maincolor);
+    font-size: 15px;
+    margin-left: 1%;
+}
+
+button:hover {
+    border: 0px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    color: var(--maincolor);
+    background-color: black;
+}

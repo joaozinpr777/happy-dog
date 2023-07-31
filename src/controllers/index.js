@@ -11,15 +11,15 @@ module.exports.home = async (application, req, res) => {
 }
 
 module.exports.acessories = async (application, req, res) => {
-    const acessorios = await getFromApi('category=acessorios&limit=20')
+    const acessorios = await getFromApi(`category=acessorios&limit=20${req.query.productName ? `&name=${req.query.productName}` : ''}`)
     res.render('secundaryPage', { pageTitle: 'Acessórios', products: acessorios })
 }
 module.exports.brinquedos = async (application, req, res) => {
-    const brinquedos = await getFromApi('category=brinquedo&limit=20')
+    const brinquedos = await getFromApi(`category=brinquedo&limit=20${req.query.productName ? `&name=${req.query.productName}` : ''}`)
     res.render('secundaryPage', { pageTitle: 'Brinquedos', products: brinquedos })
 }
 module.exports.camas = async (application, req, res) => {
-    const camas = await getFromApi('category=CAMAS&limit=20')
+    const camas = await getFromApi(`category=CAMAS&limit=20${req.query.productName ? `&name=${req.query.productName}` : ''}`)
     res.render('secundaryPage', { pageTitle: 'Camas', products: camas })
 }
 module.exports.contato = (application, req, res) => {

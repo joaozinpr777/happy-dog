@@ -21,3 +21,14 @@ function modalOff() {
 
     modal.style.display = 'none'
 }
+
+function searchOn() {
+    const inputText = document.getElementById('search').value
+    const url = window.location.href
+    window.location.href = `${url}?productName=${inputText}`
+}
+function searchOff() {
+    const url = window.location.href
+    const clean = url.split('?')
+    window.location.href = clean[0]
+}
