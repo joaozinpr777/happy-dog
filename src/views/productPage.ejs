@@ -15,12 +15,15 @@
 </head>
 
 <body>
-    <div class="modal" id="modal">
+    <div class="buy-modal" id="buy-modal">
         <div class="close">
-            <button onclick="modalOff()">X</button>
+            <button onclick="modalOff('buy-modal')">X</button>
         </div>
         <div class="message">
-            <p>Obrigado pelo contato!.</p>
+            <p>Compra de <strong>
+                    <%=result.name%>
+                </strong> efetuada.</p>
+            <p>Nós da Happy Dog agradecemos 🐾.</p>
         </div>
     </div>
     <div class="main">
@@ -61,7 +64,7 @@
                         <p>
                             R$<%=result.price['$numberDecimal']%>
                         </p>
-                        <button>COMPRAR</button>
+                        <button onclick="modal('buy-modal')">COMPRAR</button>
                     </div>
                 </div>
                 <%for (var description of descriptions){%>

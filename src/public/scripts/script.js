@@ -11,13 +11,13 @@ function setPainel() {
 }
 
 
-function modal() {
-    const modal = document.getElementById('modal')
+function modal(id) {
+    const modal = document.getElementById(id)
 
     modal.style.display = 'flex'
 }
-function modalOff() {
-    const modal = document.getElementById('modal')
+function modalOff(id) {
+    const modal = document.getElementById(id)
 
     modal.style.display = 'none'
 }

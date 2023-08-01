@@ -58,12 +58,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-image: url("/images/painel1.jpg");
     background-position: 0%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: grab;
     justify-content: end;
+}
+
+.painel div {
+    background-color: var(--maincolor);
+    opacity: 0.6;
 }
 
 .painel p:nth-child(1) {
@@ -72,6 +79,7 @@
 
 .painel p {
     font-size: 25px;
+    opacity: 1;
 }
 
 .content {

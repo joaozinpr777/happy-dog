@@ -39,6 +39,24 @@
     font-size: 20px;
 }
 
+.buy-modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+    display: none;
+}
+
+.buy-modal p:nth-child(1) {
+    font-size: 22px;
+}
+
 @media(max-width: 1000px) {
     .product-page {
         width: 100%;
